@@ -8,7 +8,6 @@
         "build-i18n-src": "./scripts/build-i18n-src.js",
         "tx-push-src": "./scripts/tx-push-src.js"
     },
-    "type": "module",
     "scripts": {
         "deploy": "node deploymgr.js",
         "build:data": "babel-node scripts/build-data",
