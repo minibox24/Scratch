@@ -1,112 +1,14 @@
 var GUI =
 (window["webpackJsonpGUI"] = window["webpackJsonpGUI"] || []).push([["blocksonly"],{
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/playground/blocks-only.css":
-/*!***********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/playground/blocks-only.css ***!
-  \***********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".blocks-only_controls_2GEvs {\n    position: absolute;\n    z-index: 2;\n    top: 10px;\n    right: 15px;\n}\n", ""]);
-
-// exports
-exports.locals = {
-	"controls": "blocks-only_controls_2GEvs"
-};
-
-/***/ }),
-
-/***/ "./src/playground/blocks-only.css":
-/*!****************************************!*\
-  !*** ./src/playground/blocks-only.css ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--5-1!../../node_modules/postcss-loader/src??postcss!./blocks-only.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/playground/blocks-only.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./src/playground/blocks-only.jsx":
 /*!****************************************!*\
   !*** ./src/playground/blocks-only.jsx ***!
   \****************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _containers_controls_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/controls.jsx */ "./src/containers/controls.jsx");
-/* harmony import */ var _containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../containers/blocks.jsx */ "./src/containers/blocks.jsx");
-/* harmony import */ var _containers_gui_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../containers/gui.jsx */ "./src/containers/gui.jsx");
-/* harmony import */ var _lib_hash_parser_hoc_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/hash-parser-hoc.jsx */ "./src/lib/hash-parser-hoc.jsx");
-/* harmony import */ var _lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/app-state-hoc.jsx */ "./src/lib/app-state-hoc.jsx");
-/* harmony import */ var _blocks_only_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks-only.css */ "./src/playground/blocks-only.css");
-/* harmony import */ var _blocks_only_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_blocks_only_css__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
-
-
-
-
-
-
-var mapStateToProps = function mapStateToProps(state) {
-  return {
-    vm: state.scratchGui.vm
-  };
-};
-
-var VMBlocks = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps)(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]);
-var VMControls = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps)(_containers_controls_jsx__WEBPACK_IMPORTED_MODULE_3__["default"]);
-
-var BlocksOnly = function BlocksOnly(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_gui_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], props, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(VMBlocks, {
-    grow: 1,
-    options: {
-      media: "static/blocks-media/"
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(VMControls, {
-    className: _blocks_only_css__WEBPACK_IMPORTED_MODULE_8___default.a.controls
-  }));
-};
-
-var App = Object(_lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_lib_hash_parser_hoc_jsx__WEBPACK_IMPORTED_MODULE_6__["default"])(BlocksOnly));
-var appTarget = document.createElement('div');
-document.body.appendChild(appTarget);
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), appTarget);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module 'babel-plugin-react-intl' from '/home/travis/build/minibox24/Scratch'\n- If you want to resolve \"react-intl\", use \"module:react-intl\"\n    at Function.resolveSync [as sync] (/home/travis/build/minibox24/Scratch/node_modules/resolve/lib/sync.js:89:15)\n    at resolveStandardizedName (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/files/plugins.js:101:31)\n    at resolvePlugin (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/files/plugins.js:54:10)\n    at loadPlugin (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/files/plugins.js:62:20)\n    at createDescriptor (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)\n    at /home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-descriptors.js:109:50\n    at Array.map (<anonymous>)\n    at createDescriptors (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)\n    at createPluginDescriptors (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-descriptors.js:105:10)\n    at /home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-descriptors.js:63:53\n    at cachedFunction (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/caching.js:62:27)\n    at cachedFunction.next (<anonymous>)\n    at evaluateSync (/home/travis/build/minibox24/Scratch/node_modules/gensync/index.js:244:28)\n    at sync (/home/travis/build/minibox24/Scratch/node_modules/gensync/index.js:84:14)\n    at plugins (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-descriptors.js:28:77)\n    at mergeChainOpts (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-chain.js:383:26)\n    at /home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-chain.js:347:7\n    at Generator.next (<anonymous>)\n    at buildRootChain (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/config-chain.js:72:36)\n    at buildRootChain.next (<anonymous>)\n    at loadPrivatePartialConfig (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/partial.js:99:62)\n    at loadPrivatePartialConfig.next (<anonymous>)\n    at Function.<anonymous> (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/partial.js:125:25)\n    at Generator.next (<anonymous>)\n    at evaluateSync (/home/travis/build/minibox24/Scratch/node_modules/gensync/index.js:244:28)\n    at Function.sync (/home/travis/build/minibox24/Scratch/node_modules/gensync/index.js:84:14)\n    at Object.<anonymous> (/home/travis/build/minibox24/Scratch/node_modules/@babel/core/lib/config/index.js:43:61)\n    at Object.<anonymous> (/home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:151:26)\n    at Generator.next (<anonymous>)\n    at asyncGeneratorStep (/home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:3:103)\n    at _next (/home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:5:194)\n    at /home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:5:364\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (/home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:5:97)\n    at Object.loader (/home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:64:18)\n    at Object.<anonymous> (/home/travis/build/minibox24/Scratch/node_modules/babel-loader/lib/index.js:59:12)");
 
 /***/ })
 
