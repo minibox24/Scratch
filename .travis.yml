@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 12.19.0
+
+before_install:
+  - npm install -g npm@latest
+
+install:
+- npm install
+- npm update
+script:
+ - echo "Success!"
+ - npm run build
+ - npm run deploy
+
+# - cd node_modules/scratch-blocks 
+# - ln -s $(npm root)/google-closure-library ../closure-library --force 
+# - npm --production=false install 
+# - cd -
