@@ -1,3 +1,3 @@
 # MiniScratch
 ## l10n
-asdf
+번역을 담당하는 부분입니다.
