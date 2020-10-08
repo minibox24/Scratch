@@ -7,8 +7,8 @@ before_install:
 
 install:
 - npm install
-- cd node_modules && cd scratch-l10n && npm install && npm run-script build && cd .. && cd ..
 - npm update
+- cd node_modules && cd scratch-l10n && npm install && npm run-script build && cd .. && cd ..
 
 script:
 # - echo "Success!"
