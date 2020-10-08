@@ -34,8 +34,8 @@ indexhtml = `<!DOCTYPE html>
   <script type="text/javascript" src="lib.min.js"></script><script type="text/javascript" src="chunks/gui.js"></script></body>
 </html>`
 
-repo = 'https://' + process.env.GH_TOKEN + '@github.com/minibox24/scratch-gui.git'
-cmd = `gh-pages -t -d build --repo ${repo} -m "Build for $(git log --pretty=format:%H -n1) [skip ci]"`
+repo = 'https://' + process.env.GH_TOKEN + '@github.com/minibox24/Scratch.git'
+cmd = `gh-pages -t -d build -b build --repo ${repo} -m "Build for $(git log --pretty=format:%H -n1)"`
 
 exec("touch build/.nojekyll", (error, stdout, stderr) => {
     if (error) {
