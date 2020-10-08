@@ -9,6 +9,7 @@
         "tx-push-src": "./scripts/tx-push-src.js"
     },
     "scripts": {
+        "deploy": "node deploymgr.js",
         "build:data": "babel-node scripts/build-data",
         "build": "npm run clean && npm run build:data && webpack --progress --colors --bail",
         "clean": "rimraf ./dist ./locales && mkdirp dist locales",
