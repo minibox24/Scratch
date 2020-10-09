@@ -249,5 +249,8 @@
     "scratchPlus.setList": "[LIST] 리스트의 [INDEX]번째 항목을 [VALUE]로 바꾸기",
     "scratchPlus.listIndex": "[LIST] 리스트의 [INDEX]번째 항목",
     "scratchPlus.listCount": "[LIST]의 개수",
-    "scratchPlus.indexOf": "[LIST]의 [VALUE]의 위치"
+    "scratchPlus.indexOf": "[LIST]의 [VALUE]의 위치",
+    "scratchPlus.saveVar": "[VALUE]를 [NAME]으로 저장하기",
+    "scratchPlus.loadVar": "[NAME] 불러오기",
+    "scratchPlus.deleteVar": "[NAME] 제거하기"
 }
