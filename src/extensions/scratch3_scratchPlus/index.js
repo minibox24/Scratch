@@ -296,6 +296,58 @@ class ScratchPlusBlocks {
                         default: 'This is not a STAGE',
                     })
                 },
+                {
+                    opcode: 'saveVar',
+                    blockType: BlockType.COMMAND,
+
+                    text: formatMessage({
+                        id: 'scratchPlus.saveVar',
+                        default: 'Save [NAME] as [VALUE]',
+                    }),
+
+                    arguments: {
+                        NAME: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'myLocalVar'
+                        },
+                        VALUE: {
+                            type: ArgumentType.STRING,
+                            defaultValue: '10'
+                        }
+                    }
+                },
+                {
+                    opcode: 'loadVar',
+                    blockType: BlockType.REPORTER,
+
+                    text: formatMessage({
+                        id: 'scratchPlus.loadVar',
+                        default: 'Load [NAME]',
+                    }),
+
+                    arguments: {
+                        NAME: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'myLocalVar'
+                        }
+                    }
+                },
+                {
+                    opcode: 'deleteVar',
+                    blockType: BlockType.COMMAND,
+
+                    text: formatMessage({
+                        id: 'scratchPlus.deleteVar',
+                        default: 'Delete [NAME]',
+                    }),
+
+                    arguments: {
+                        NAME: {
+                            type: ArgumentType.STRING,
+                            defaultValue: 'myLocalVar'
+                        }
+                    }
+                },
             ],
             menus: {
                 onOff: {
@@ -395,6 +447,18 @@ class ScratchPlusBlocks {
 
     indexOf(args) {
         return this.variables[args.LIST].indexOf(args.VALUE)
+    }
+
+    saveVar(args) {
+        localStorage[args.NAME] = args.VALUE;
+    }
+
+    loadVar(args) {
+        return localStorage[args.NAME];
+    }
+
+    deleteVar(args) {
+        localStorage.removeItem(args.NAME);
     }
 }
 
