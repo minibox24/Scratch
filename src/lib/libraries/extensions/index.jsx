@@ -54,44 +54,6 @@ import scratchLogoSmall from './scratchPlus/small.svg';
 
 export default [
     {
-        name: 'Discord',
-        extensionId: 'discord',
-        collaborator: 'choshinyoung',
-        iconURL: discordLogo1,
-        insetIconURL: discordLogo2,
-        description: (
-            <FormattedMessage
-                defaultMessage="Make your own discord bot with scratch!"
-                description="Discord Extension Description."
-                id="gui.extension.discord.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        internetConnectionRequired: true,
-        bluetoothRequired: false,
-        helpLink: 'https://shinyoung.tech'
-    },
-    {
-        name: 'Scratch Plus',
-        extensionId: 'scratchPlus',
-        collaborator: 'choshinyoung',
-        iconURL: scratchLogoBig,
-        insetIconURL: scratchLogoSmall,
-        description: (
-            <FormattedMessage
-                defaultMessage="Extraordinary extended extension."
-                description="ScratchPlus Extension Description."
-                id="gui.extension.scratchPlus.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        internetConnectionRequired: false,
-        bluetoothRequired: false,
-        helpLink: 'https://shinyoung.tech'
-    },
-    {
         name: (
             <FormattedMessage
                 defaultMessage="Music"
@@ -361,5 +323,53 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
+    {
+        name: 'Discord',
+        extensionId: 'discord',
+        collaborator: 'choshinyoung',
+        iconURL: discordLogo1,
+        insetIconURL: discordLogo2,
+        description: (
+            <FormattedMessage
+                defaultMessage="Make your own discord bot with scratch!"
+                description="Discord Extension Description."
+                id="gui.extension.discord.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://shinyoung.tech'
+    },
+    {
+        name: 'Scratch Plus',
+        extensionId: 'scratchPlus',
+        collaborator: 'choshinyoung',
+        iconURL: scratchLogoBig,
+        insetIconURL: scratchLogoSmall,
+        description: (
+            <FormattedMessage
+                defaultMessage="Extraordinary extended extension."
+                description="ScratchPlus Extension Description."
+                id="gui.extension.scratchPlus.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false,
+        helpLink: 'https://shinyoung.tech'
+    },
+    {
+        name: 'test',
+        extensionId: 'test',
+        collaborator: 'Minibox',
+        iconURL: scratchLogoBig,
+        insetIconURL: scratchLogoSmall,
+        description: 'ㅁㄴㅇㄹ',
+        featured: true,
+        internetConnectionRequired: true,
+    },
 ];

@@ -143,6 +143,7 @@ const costumeUpload = function (fileData, fileType, storage, handleCostume, hand
         );
         handleCostume([vmCostume]);
     };
+    window.addcost = addCostumeFromBuffer
 
     if (costumeFormat === storage.DataFormat.SVG) {
         // Must pass in file data as a Uint8Array,

@@ -79,7 +79,6 @@
     "scratch-render": "0.1.0-prerelease.20200827214414",
     "scratch-storage": "1.3.3",
     "scratch-svg-renderer": "0.2.0-prerelease.20200610220938",
-    "scratch-l10n": "github:minibox24/Scratch#l10n",
     "scratch-vm": "github:minibox24/Scratch#vm",
     "startaudiocontext": "1.2.1",
     "style-loader": "^0.23.0",
@@ -121,14 +120,13 @@
     "react-test-renderer": "16.2.0",
     "redux-mock-store": "^1.2.3",
     "rimraf": "^2.6.1",
+    "scratch-vm": "0.2.0-prerelease.20200924195620",
     "selenium-webdriver": "3.6.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "web-audio-test-api": "^0.5.2",
     "webpack": "^4.6.0",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.3",
-    "scratch-vm": "0.2.0-prerelease.20200924195620",
-    "scratch-l10n": "3.10.20200923030814"
+    "webpack-dev-server": "^3.1.3"
   },
   "jest": {
     "setupFiles": [
