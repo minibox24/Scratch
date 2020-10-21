@@ -25,7 +25,8 @@ const builtinExtensions = {
     boost: () => require('../extensions/scratch3_boost'),
     gdxfor: () => require('../extensions/scratch3_gdx_for'),
     discord: () => require('../extensions/scratch3_discord'),
-    scratchPlus: () => require('../extensions/scratch3_scratchPlus')
+    scratchPlus: () => require('../extensions/scratch3_scratchPlus'),
+    test: () => require('../extensions/test')
 };
 
 /**
