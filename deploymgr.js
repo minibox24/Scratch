@@ -49,7 +49,7 @@ exec("touch build/.nojekyll", (error, stdout, stderr) => {
     console.log(`stdout: ${stdout}`);
 })
 
-fs.writeFile('build/CNAME', 'scratch.minibox.pw', (error) => {console.log(`error: ${error}`)})
+fs.writeFile('build/CNAME', 'scratch.minibox.xyz', (error) => {console.log(`error: ${error}`)})
 fs.writeFile('build/index.html', indexhtml, (error) => {console.log(`error: ${error}`)})
 
 exec(cmd, (error, stdout, stderr) => {
